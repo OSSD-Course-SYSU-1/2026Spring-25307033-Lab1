@@ -1,0 +1,12 @@
+export const initPlayer: () => void;
+export const loadSongInfo: (songFd: number, songFileSize: number, songFileOffset: number) => void;
+export const playSong: () => void;
+export const pauseSong: () => void;
+export const stopSong: () => void;
+export const seekPlaySong: (timeStamp: number) => void;
+export const setPlayingSpeed: (speed: number) => void;
+export const setPlayingVolume: (volume: number) => void;
+export const setSilentMode: (isSilentMode: boolean) => void;
+export const releasePlayer: () => void;
+export const onPlayStatus: (cbFn: (state: number) => void) => void;
+export const getProgress: () => number;
